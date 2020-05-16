@@ -30,3 +30,7 @@ We sometimes wish to find a signal within a larger signal. This is particularly 
 An applicaton of this is in image processing when we wish to locate a small image within a larger image. This process is called *template matching*.
 
 ### Process for second coding question: Image Processing
+* In order to perform template matching we will use the `match_template()` function in the library *skimage.feature*. The image we are searching for is *ERBwideColorSmall.jpg* and the template being searched for is *ERBwideTemplate.jpg*.
+* Once we find the  location within the larger image that the template best matches,  
+  i. We replace that block of pixels in the larger image with zeros. That is, once you find the smaller image within the larger image, make that block of pixels black.
+  ii. Display the new image with the black box in its own figure window.
